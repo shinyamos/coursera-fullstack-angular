@@ -46,6 +46,7 @@ function MenuSearchService($q, $http, ApiBasePath) {
   service.getMatchedMenuItems = function (searchTerm) {
     var deferred = $q.defer();
     var promise = service.getAllMenuItems();
+    service.found = [];
     promise.then(function (response) {
       var menuItems = response.data.menu_items;
       var lCaseSearchTerm = searchTerm.toLowerCase();
