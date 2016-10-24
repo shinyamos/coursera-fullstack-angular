@@ -7,7 +7,7 @@ angular.module('MenuApp')
 CategoryListController.$inject = ['menuCategories'];
 function CategoryListController(menuCategories) {
   var categoryList = this;
-  console.log("Controller injected with " + menuCategories);
+  console.log("CategoryListController injected with " + menuCategories);
   categoryList.items = menuCategories;
 }
 

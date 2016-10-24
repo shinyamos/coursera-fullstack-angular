@@ -1,6 +1,10 @@
+WAKALA
+
+<!-- {{categoryList}}
 <ul>
-  <li ng-repeat="item in $ctrl.items">
-    <!-- <li ng-repeat="item in $ctrl.items" ui-sref="mainList.itemDetail({itemId: $index})"> -->
-    {{ item.quantity }} of {{ item.name }}
+  {{items}}
+  <li ng-repeat="item in categoryList.items">
+    <li ng-repeat="item in $ctrl.items" ui-sref="mainList.itemDetail({itemId: $index})">
+    {{ item.short_name }} of {{ item.name }}
   </li>
-</ul>
+</ul> -->
